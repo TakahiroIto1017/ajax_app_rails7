@@ -31,7 +31,7 @@ function post (){
         alert(`Error ${XHR.status}: ${XHR.statusText}`);
         return null;
       };
-      
+
       const list = document.getElementById("list");
       const formText = document.getElementById("content");
       list.insertAdjacentHTML("afterend", buildHTML(XHR));
@@ -41,6 +41,6 @@ function post (){
   
   });
 
- };
+};
  
- window.addEventListener('turbo:load', post);
+window.addEventListener('turbo:load', post);
